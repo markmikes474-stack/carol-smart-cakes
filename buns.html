@@ -1,0 +1,46 @@
+﻿<html>
+<head>
+<link rel="stylesheet" href="buns.css">
+<title>
+buns
+</title>
+</head>
+<body>
+<button id="checkout-button">
+pay $10
+</button>
+
+<script>
+const stripe = stripe("YOUR_PUBLISHABLE_KEY");
+
+document.getelementbyid("checkout-button")
+.addeventlistener("click", async () => {
+const response = await fetch("/create-payment-intent", {
+method: "POST",
+headers: {
+"content-type": "application/json",
+},
+body: json.stringify({
+amount:1000,
+}),
+}):
+const data = await stripe.confirmcardpayment(
+data.clientsecret,
+{
+payment_method: {
+card: {
+token: "tok_visa"
+}
+}
+);
+if (result.error) {
+alert(result.error.message);
+} else {
+if (result.paymentintent.status === "succeeded") {
+alert("payment successfull");
+}
+}
+});
+</script>
+</body>
+</html>

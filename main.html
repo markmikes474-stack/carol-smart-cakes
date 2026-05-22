@@ -1,0 +1,86 @@
+﻿<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum=1">
+<link rel="stylesheet" href="main.css"/>
+<title>
+</title>
+</head>
+<body>
+<div class="container">
+<p>
+<img src="man.jpg">
+carol smart cakes
+</p>
+<br/>
+<a href="home.html">
+<button>
+home
+</button>
+</a>
+<a href="location.html">
+<button>
+location
+</button>
+</a>
+<a href="services.html">
+<button>
+services
+</button>
+</a>
+<a href="contacts.html">
+<button>
+contacts
+</button>
+</a>
+</div>
+<div>
+<section id="section1">
+<header style="font-color:blue; font-size:30px;">
+<b>o</b>ur bakery products are a nature crafted with sweetness....
+</header>
+<h2>
+our products include the following:
+</h2>
+<ul>
+<li>
+cakes
+</li>
+<li>
+donuts
+</li>
+<li>
+loaves of bread
+</li>
+<li>
+buns
+</li>
+</ul>
+<fieldset style="background-color:rgba(100,100,100,0.7); height:10px; width:75%;border-radius:
+10px; margin-top:195px;>
+<p style="font-color:pink">
+order with us online
+</p>
+</fieldset>
+</section>
+<section id="section2">
+<button id="changebtn">
+change button
+</button>
+<script>
+const button=
+document.getelementbyid("changebtn");
+
+const heading=
+document.getelementbyid("heading");
+
+button.addeventlistener("click", () => {
+
+heading.innertext = "javascript is working!";
+
+heading.style.color = "blue";
+});
+</script>
+</section>
+</div>
+</body>
+</html>
