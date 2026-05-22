@@ -1,0 +1,14 @@
+﻿body
+{
+background-color:rgba(200,200,200,0.7);
+}
+button
+{
+background-color:powderblue;
+height:100px;
+width:200px;
+border-radius:40px;
+margin-left:100px;
+margin-top:50px;
+border-color:pink;
+}
