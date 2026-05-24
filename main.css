@@ -1,6 +1,11 @@
 ﻿body
 {
-background-color:powderblue;
+background-image:url('mrki.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  font-family: arial, sans-serif;
 }
 .container
 {
