@@ -1,12 +1,4 @@
-﻿body
-{
-background-image:url('mrki.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  min-height: 100vh;
-  font-family: arial, sans-serif;
-}
+﻿
 .container
 {
 background-color:rgba(100,100,100,0.4);
@@ -23,10 +15,10 @@ font-size:50px;
 }
 #section2
 {
-background-color:aqua;
-width:50%;
+background-color:rgb(0, 255, 255,0.4);
+width:100%;
 position:right;
-height:450px;
+height:350px;
 border-radius:10px;
 margin-top:20px;
 }
@@ -46,15 +38,129 @@ margin-left:50px;
 }
 #section1
 {
-background-color:rgba(255,192,203,0.6);
-height:430px;
-width:75%;
-margin-right:0px;
-border-radius:5px;
-margin-top:20px;
+  background-color: rgba(255, 182, 193, 0.7); /* 0.7 = 70% opacity */
+  background-image: url('kc.jpeg');       /* your new cake image */
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #ffd700;
+}
 }
 p3
 {
 font-size:40px;
 }
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
+body {
+  background-image: url('mrk\ i.jpeg'); /* upload one of your cake pics with this name */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  padding: 15px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  background: rgba(176, 190, 197, 0.9); /* grayish blue with transparency */
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  border: 2px solid #ffd700;
+}
+
+.header h1 {
+  color: #f06292; /* pink */
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.header p {
+  color: #fff;
+  font-size: 16px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.buttons button {
+  background: #b2ebf2;
+  border: 2px solid #000;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.pink-box {
+  background: rgba(248, 187, 208, 0.92); /* pink with transparency */
+  padding: 25px;
+  border-radius: 12px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.pink-box h2 { margin-bottom: 10px; }
+.pink-box ul { margin-left: 20px; }
+
+/* Mobile fix */
+@media (max-width: 600px) {
+  body { background-attachment: scroll; }
+  .header h1 { font-size: 26px; }
+  .buttons button { font-size: 14px; padding: 8px 16px; }
+}
+.top-header {
+  position: relative; /* needed for absolute positioning */
+  text-align: center;
+  padding: 20px 10px;
+  background: rgba(0,0,0,0.3); /* semi-transparent so your bg shows */
+  border-radius: 10px;
+}
+
+.top-header h1 {
+  font-size: 32px;
+  color: white;
+  margin: 0;
+  padding-right: 80px; /* makes space so text doesn’t overlap logo */
+}
+
+.header-logo {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .header-logo {
+    width: 45px;
+    height: 45px;
+    top: 8px;
+    right: 10px;
+  }
+  .top-header h1 {
+    padding-right: 60px;
+    font-size: 24px;
+  }
+}

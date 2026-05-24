@@ -1,6 +1,10 @@
-﻿body
-{
-background-color:rgba(200,200,200,0.7);
+﻿body {
+  background-image: url('mrk\ i.jpeg'); /* upload one of your cake pics with this name */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
 }
 button
 {
